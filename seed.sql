@@ -1,0 +1,3 @@
+INSERT INTO source_documents (id,title,url,publisher,scheme,updated_date,official,status,notes)
+SELECT 'placeholder-sbi-bluechip','SBI Blue Chip Fund — Official Factsheet Placeholder','https://www.sbimf.com/','SBI Mutual Fund','SBI Blue Chip Fund','Not indexed yet',TRUE,'placeholder','Add the current official factsheet/document through the Hatchable Knowledge tab before using as financial source evidence.'
+WHERE NOT EXISTS (SELECT 1 FROM source_documents WHERE id='placeholder-sbi-bluechip')
