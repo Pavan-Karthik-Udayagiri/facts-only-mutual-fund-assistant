@@ -1,0 +1,8 @@
+name = "Facts-Only Mutual Fund Assistant"
+
+[ai]
+required = true
+
+[[secret]]
+name = "OPENAI_API_KEY"
+expose = false
